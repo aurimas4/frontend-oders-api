@@ -1,0 +1,25 @@
+FORMAT: 1A
+HOST: http://orders.apiblueprint.org/
+
+# orders
+
+## Orders Collection [/orders]
+
+### List All Orders [GET]
+
++ Response 200 (application/json)
+
+        [
+            {
+                id: 1
+            }
+        ]
+
+## Order [/order/{order_id}/accept]
+
++ Parameters
+    + order_id (number) - ID of the Order in the form of an integer
+
+### Accept Order [POST]
+
++ Response 200 (application/json)
